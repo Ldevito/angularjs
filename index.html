@@ -8,3 +8,25 @@
     <h1>Hello Coursera! test two</h1>
   </body>
 </html>
+// Include annyang from a CDN service or from your own server.
+<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/1.4.0/annyang.min.js"></script>
+
+<script>
+     // check if speech recognition is supported
+    if (annyang) {
+
+    // Define your commands
+    var commands = {
+
+        'hello': function() { alert('Hello World!!!'); }
+
+    };
+
+    // Use addCommands API to add commands to annyang
+    annyang.addCommands(commands);
+
+    // Start listening. You call this right here or do it later on some event like button click
+    annyang.start();
+
+    }
+</script>
