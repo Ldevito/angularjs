@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-    <html lang = "en">
+  <html lang = "en">
   <head>
     <meta charset="UTF-8">
     <title>Hello Coursera</title>
@@ -9,7 +9,28 @@
     <h1>Hello Coursera! test two</h1>
     <input type="text" name="text">
     <a href="#" class="say"> Say it! </a>
-    <audio src="" class="speech"></audio>
+    <audio controls src="" class="speech" hidden></audio>
+    <script>
+    var msg = new SpeechSynthesisUtterance();
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[9]; // Note: some voices don't support altering params
+  msg.voiceURI = 'native';
+  msg.volume = 1; // 0 to 1
+  msg.rate = 1; // 0.1 to 10
+  msg.pitch = 2; //0 to 2
+  //msg.text = 'Hi my name is louis';
+  var test = "Can I help you prepare a will";
+  var ans = Speech();
+  window.alert(ans);
+  msg.text = test;
+  msg.lang = 'en-US';
+
+  msg.onend = function(e) {
+    console.log('Finished in ' + event.elapsedTime + ' seconds.');
+  };
+
+  speechSynthesis.speak(msg);
+</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
     $(function(){
@@ -26,17 +47,18 @@
 
   </body>
 </html>
-<!-- Include annyang from a CDN service or from your own server.
+Include annyang from a CDN service or from your own server.
 <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/1.4.0/annyang.min.js"></script>
 
 <script>
+    function Speech(){
      // check if speech recognition is supported
     if (annyang) {
 
     // Define your commands
     var commands = {
 
-        'tell Marisa': function() { alert('I Love you Jelly Bean'); }
+        'Yes': return 'Yes'
 
 
     };
@@ -48,4 +70,5 @@
     annyang.start();
 
     }
+  }
 </script>
