@@ -20,8 +20,7 @@
   var test = "Can I help you prepare a will";
 
   msg.text = test;
-  var ans = Speech();
-  window.alert(ans);
+
   msg.lang = 'en-US';
 
   msg.onend = function(e) {
@@ -36,14 +35,14 @@ Include annyang from a CDN service or from your own server.
 <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/1.4.0/annyang.min.js"></script>
 
 <script>
-    function Speech(){
+
      // check if speech recognition is supported
     if (annyang) {
 
     // Define your commands
     var commands = {
 
-        'Yes': return 'Yes';
+         'hello': function() { alert('Hello World!!!'); }
 
 
     };
@@ -55,6 +54,6 @@ Include annyang from a CDN service or from your own server.
     annyang.start();
 
     }
-  };
+
 </script>
 </html>
