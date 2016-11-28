@@ -6,10 +6,8 @@
     <title>Hello Coursera</title>
   </head>
   <body>
-    <h1>Hello Coursera! test two</h1>
-    <input type="text" name="text">
-    <a href="#" class="say"> Say it! </a>
-    <audio controls src="" class="speech" hidden></audio>
+    <h1>Will Preparation Expert System</h1>
+
     <script>
     var msg = new SpeechSynthesisUtterance();
   var voices = window.speechSynthesis.getVoices();
@@ -22,8 +20,8 @@
   var test = "Can I help you prepare a will";
 
   msg.text = test;
-  //var ans = Speech();
-  //window.alert(ans);
+  var ans = Speech();
+  window.alert(ans);
   msg.lang = 'en-US';
 
   msg.onend = function(e) {
@@ -31,23 +29,9 @@
   };
 
   speechSynthesis.speak(msg);
-</script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>
-    $(function(){
-      $('a.say').on('click',function(e){
-        e.preventDefault();
-        var text = $('input[name="text"]').val();
-        text = encodeURIComponent(text);
-        console.log(text);
-        var url = "https://translate.google.com/translate_tts?ie=UTF-8&q" + text + "$tl=en";
-        $('audio').attr('src', url).get(0).play();
-      });
-    });
-    </script>
 
+</script>
   </body>
-</html>
 Include annyang from a CDN service or from your own server.
 <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/1.4.0/annyang.min.js"></script>
 
@@ -59,7 +43,7 @@ Include annyang from a CDN service or from your own server.
     // Define your commands
     var commands = {
 
-        'Yes': return 'Yes'
+        'Yes': return 'Yes';
 
 
     };
@@ -73,3 +57,4 @@ Include annyang from a CDN service or from your own server.
     }
   }
 </script>
+</html>
