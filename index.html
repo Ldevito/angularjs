@@ -6,6 +6,9 @@
   </head>
   <body>
     <h1>Hello Coursera! test two</h1>
+    <input type = "text" name = "text">
+    <a href = "#" class = "say" hidden> </audio>
+
   </body>
 </html>
 // Include annyang from a CDN service or from your own server.
@@ -19,7 +22,7 @@
     var commands = {
 
         'tell Marisa': function() { alert('I Love you Jelly Bean'); }
-      
+
 
     };
 
@@ -30,4 +33,16 @@
     annyang.start();
 
     }
-</script>git
+</script>
+<script>
+$(function(){
+  $('a.say').on('click', function(e){
+    e.preventDefault();
+    var text = $('input[name="text"]')val();
+    text = encodeURIcomponent(text);
+    console.log(text);
+    var url = "https://translate.google.com/translate_tts?ie=UTF-8&q" +"text" + "$tl=en";
+    $('audio').attr ('src', url).get(0).play();
+  })
+})
+</script>
