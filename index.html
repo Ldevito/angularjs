@@ -6,25 +6,26 @@
   </head>
   <body>
     <h1>Hello Coursera! test two</h1>
-    <input type = "text" name = "text">
-    <a href = "#" class = "say"> Say it! </a>
-    <audio src="" class"speech" hidden></audio>
+    <input type="text" name="text">
+    <a href="#" class="say"> Say it! </a>
+    <audio src="" class="speech" hidden></audio>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
     $(function(){
-      $('a.say').on('click', function(e){
+      $('a.say').on('click',function(e){
         e.preventDefault();
-        var text = $('input[name="text"]')val();
+        var text = $('input[name="text"]').val();
         text = encodeURIcomponent(text);
         console.log(text);
-        var url = "https://translate.google.com/translate_tts?ie=UTF-8&q" +"text" + "$tl=en";
-        $('audio').attr ('src', url).get(0).play();
-      })
-    })
+        var url = "https://translate.google.com/translate_tts?ie=UTF-8&q" +text + "$tl=en";
+        $('audio').attr('src', url).get(0).play();
+      });
+    });
     </script>
 
   </body>
 </html>
-// Include annyang from a CDN service or from your own server.
+<!-- Include annyang from a CDN service or from your own server.
 <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/1.4.0/annyang.min.js"></script>
 
 <script>
@@ -46,16 +47,4 @@
     annyang.start();
 
     }
-</script>
-<script>
-$(function(){
-  $('a.say').on('click', function(e){
-    e.preventDefault();
-    var text = $('input[name="text"]')val();
-    text = encodeURIcomponent(text);
-    console.log(text);
-    var url = "https://translate.google.com/translate_tts?ie=UTF-8&q" +"text" + "$tl=en";
-    $('audio').attr ('src', url).get(0).play();
-  })
-})
 </script>
