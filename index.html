@@ -8,6 +8,7 @@
   <body>
     <h1>Will Preparation Expert System</h1>
 
+
     <script>
     var msg = new SpeechSynthesisUtterance();
   var voices = window.speechSynthesis.getVoices();
@@ -31,7 +32,7 @@
 
 </script>
   </body>
-Include annyang from a CDN service or from your own server.
+<!--Include annyang from a CDN service or from your own server. -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/1.4.0/annyang.min.js"></script>
 
 <script>
@@ -42,7 +43,12 @@ Include annyang from a CDN service or from your own server.
     // Define your commands
     var commands = {
 
-         'hello': function() { alert('Hello World!!!'); }
+         'louis': function() { var first = "Louis";
+         document.write('<h1>'+ first + '</h1>');
+
+ }
+
+
 
 
     };
