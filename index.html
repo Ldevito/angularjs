@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<script src='https://code.responsivevoice.org/responsivevoice.js'> </script>
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
   <html lang = "en">
   <head>
     <meta charset="UTF-8">
@@ -9,7 +9,13 @@
 <div>                 Last Will and Testament of</div>
     <div id="firstName">      first name</div>
     <input id="Voice" click='responsiveVoice.speak("Hello World");' type='button' value='🔊 Play' />
-
+<script >
+Once();
+function Once(){
+document.getElementById("Voice").click();
+alert("help");
+}
+</script>
 <!--
   <script>
   var msg = new SpeechSynthesisUtterance();
@@ -27,7 +33,6 @@
   console.log('Finished in ' + event.elapsedTime + ' seconds.');
   };
   speechSynthesis.speak(msg);
-
 </script>
 -->
   </body>
