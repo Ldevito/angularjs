@@ -8,9 +8,12 @@
   <body>
 <div>                 Last Will and Testament of</div>
     <div id="firstName">      first name</div>
+<script>
+    $(document).ready(function() {
+      responisiveVoice.speak("Hello World");
+    });
+</script>
 
-<input onclick='responsiveVoice.speak("Hello World");' type='button' value='🔊 Play' />
-<script> responsiveVoice.speak("Hello World"); </script>
   <script>
   var msg = new SpeechSynthesisUtterance();
   var voices = window.speechSynthesis.getVoices();
