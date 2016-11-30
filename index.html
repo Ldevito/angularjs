@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+<script src='https://code.responsivevoice.org/responsivevoice.js'>
+Once();
+function Once(){
+responsiveVoice.speak("Hello World");
+alert("help");
+}
+
+</script>
   <html lang = "en">
   <head>
     <meta charset="UTF-8">
@@ -10,11 +17,7 @@
     <div id="firstName">      first name</div>
     <input id="Voice" click='responsiveVoice.speak("Hello World");' type='button' value='🔊 Play' />
 <script >
-Once();
-function Once(){
-document.getElementById("Voice").click();
-alert("help");
-}
+
 </script>
 <!--
   <script>
