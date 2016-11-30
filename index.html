@@ -1,79 +1,49 @@
 <!DOCTYPE html>
-
-
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
   <html lang = "en">
   <head>
     <meta charset="UTF-8">
     <title>Hello Coursera</title>
   </head>
   <body>
-
-<div>    Last Will and Testament of</div>
+<div>                 Last Will and Testament of</div>
     <div id="firstName">      first name</div>
 
-
 <input onclick='responsiveVoice.speak("Hello World");' type='button' value='🔊 Play' />
-
-<script>
-
-var msg = new SpeechSynthesisUtterance();
-var voices = window.speechSynthesis.getVoices();
-msg.voice = voices[9]; // Note: some voices don't support altering params
-msg.voiceURI = 'native';
-msg.volume = 1; // 0 to 1
-msg.rate = 1; // 0.1 to 10
-msg.pitch = 2; //0 to 2
-msg.text = 'Hi my name is louis';
-var test = "What is your name";
-
- msg.text = test;
-
- msg.lang = 'en-US';
-
-msg.onend = function(e) {
- console.log('Finished in ' + event.elapsedTime + ' seconds.');
- };
-
+    <script>
+    var msg = new SpeechSynthesisUtterance();
+  var voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[9]; // Note: some voices don't support altering params
+  msg.voiceURI = 'native';
+  msg.volume = 1; // 0 to 1
+  msg.rate = 1; // 0.1 to 10
+  msg.pitch = 2; //0 to 2
+  //msg.text = 'Hi my name is louis';
+  var test = "What is your name";
+  msg.text = test;
+  msg.lang = 'en-US';
+  msg.onend = function(e) {
+    console.log('Finished in ' + event.elapsedTime + ' seconds.');
+  };
   speechSynthesis.speak(msg);
-
 </script>
-</body>
+  </body>
 <!--Include annyang from a CDN service or from your own server. -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/1.4.0/annyang.min.js"></script>
-<script src="http://code.responsivevoice.org/responsivevoice.js"></script>
-<script>
 
+<script>
      // check if speech recognition is supported
     if (annyang) {
-
     // Define your commands
     var commands = {
-
          'My name is *val': function(val) { var first = val;
        var setFirst = document.getElementById('firstName');
        setFirst.textContent = first;}
-
-
-
-
     };
-
     // Use addCommands API to add commands to annyang
     annyang.addCommands(commands);
-
     // Start listening. You call this right here or do it later on some event like button click
     annyang.start();
-
     }
-</script>
-</html>
-
-
-
-
-
-
-
-
 </script>
 </html>
