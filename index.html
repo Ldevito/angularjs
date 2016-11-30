@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
   <html lang = "en">
   <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
 <div>                 Last Will and Testament of</div>
     <div id="firstName">      first name</div>
 
-
+<input onclick='responsiveVoice.speak("Hello World");' type='button' value='🔊 Play' />
     <script>
     var msg = new SpeechSynthesisUtterance();
   var voices = window.speechSynthesis.getVoices();
