@@ -8,11 +8,11 @@
   <body>
 <div>                 Last Will and Testament of</div>
     <div id="firstName">      first name</div>
-    <input id = "Voice" onclick='responsiveVoice.speak("Hello World");' type='button' value='🔊 Play' />
+    <input onclick='responsiveVoice.speak("Hello World");' type='button' id='Voice' value='🔊 Play' />
 <script >
-document.getElementById("Voice").click();
+document.getElementById('Voice').click();
 </script>
-
+<!--
   <script>
   var msg = new SpeechSynthesisUtterance();
   var voices = window.speechSynthesis.getVoices();
@@ -31,6 +31,7 @@ document.getElementById("Voice").click();
   speechSynthesis.speak(msg);
 
 </script>
+-->
   </body>
 <!--Include annyang from a CDN service or from your own server. -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/1.4.0/annyang.min.js"></script>
