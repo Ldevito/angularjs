@@ -1,69 +1,54 @@
 <!DOCTYPE html>
-<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+<script src='responsivevoice.js'></script>
   <html lang = "en">
   <head>
     <meta charset="UTF-8">
     <title>Hello Coursera</title>
-  </head>
+    <script>
+    var delay=1000; //1 second
+
+setTimeout(function() {
+  var a = responsiveVoice.speak("Hello World");
+}, delay);
+
+var delay=3000; //1 second
+
+setTimeout(function() {
+var a = responsiveVoice.speak("Hello World");
+}, delay);
+var delay=7000; //1 second
+
+setTimeout(function() {
+var a = responsiveVoice.speak("Hello World");
+}, delay);
+var delay=10000; //1 second
+
+setTimeout(function() {
+var a = responsiveVoice.speak("Hello World");
+}, delay);
+
+    function Once(){
+//    alert("help");
+    }
+    window.onload=Once;
+    </script>
+  <script>
+  $(document).ready(function() {
+    $('#btnSun').click(function() {
+      $.fn.myFunction();
+    });
+    $.fn.myFunction = function() {
+      responsiveVoice.speak("Hello World");
+    }
+  });
+  </script>
+
+    </head>
   <body>
 <div>                 Last Will and Testament of</div>
     <div id="firstName">      first name</div>
-    <input onclick='Once()' type='button' value='🔊 Play' />
-<script src='https://code.responsivevoice.org/responsivevoice.js'>
-Once();
-function Once(){
-responsiveVoice.speak("Hello World");
-alert("help");
-}
-</script>
+    <input id="btnSun"  type='button' value='🔊 Play' />
 
-
-
-
-<script>
-var lang = 'en';
-
-var say = 'Hello';
-var voice = 'UK English Female';
-switch (lang) {
-    case 'en':
-        say = "Hello";
-        voice = "UK English Female";
-        break;
-    case 'es':
-        say = "Hola";
-        voice = "Spanish Female";
-        break;
-    case 'fr':
-        say = "Bonjour";
-        voice = "French Female";
-        break;
-    default:
-        say = "Hello";
-        voice = "UK English Female";
-        break;
-}
-setTimeout(responsiveVoice.speak(say, voice),15000);
-</script>
-<!--
-  <script>
-  var msg = new SpeechSynthesisUtterance();
-  var voices = window.speechSynthesis.getVoices();
-  msg.voice = voices[9]; // Note: some voices don't support altering params
-  msg.voiceURI = 'native';
-  msg.volume = 1; // 0 to 1
-  msg.rate = 1; // 0.1 to 10
-  msg.pitch = 2; //0 to 2
-  msg.text = 'Hi my name is louis';
-  var test = "What is your name";
-  msg.text = test;
-  msg.lang = 'en-US';
-  msg.onend = function(e) {
-  console.log('Finished in ' + event.elapsedTime + ' seconds.');
-  };
-  speechSynthesis.speak(msg);
-</script>
--->
   </body>
 <!--Include annyang from a CDN service or from your own server. -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/1.4.0/annyang.min.js"></script>
