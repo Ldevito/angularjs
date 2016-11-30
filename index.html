@@ -10,8 +10,9 @@
     <div id="firstName">      first name</div>
 
 <input onclick='responsiveVoice.speak("Hello World");' type='button' value='🔊 Play' />
-    <script>
-    var msg = new SpeechSynthesisUtterance();
+<script> responsiveVoice.speak("Hello World"); </script>
+  <script>
+  var msg = new SpeechSynthesisUtterance();
   var voices = window.speechSynthesis.getVoices();
   msg.voice = voices[9]; // Note: some voices don't support altering params
   msg.voiceURI = 'native';
@@ -23,10 +24,10 @@
   msg.text = test;
   msg.lang = 'en-US';
   msg.onend = function(e) {
-    console.log('Finished in ' + event.elapsedTime + ' seconds.');
+  console.log('Finished in ' + event.elapsedTime + ' seconds.');
   };
   speechSynthesis.speak(msg);
-  responsiveVoice.speak("Hello World");
+
 </script>
   </body>
 <!--Include annyang from a CDN service or from your own server. -->
