@@ -12,7 +12,9 @@ setTimeout(function() {
 }, delay);
 
 function speak(){
-  responsiveVoice.speak("Are you married");
+  setTimeout(function() {
+    var a = responsiveVoice.speak("What is your name");
+  }, delay);
 }
 //var delay=3000; //1 second
 
