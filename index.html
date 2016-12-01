@@ -5,43 +5,34 @@
     <meta charset="UTF-8">
     <title>Hello Coursera</title>
     <script>
-    var delay=1000; //1 second
+    var delay=700; //1 second
 
 setTimeout(function() {
   var a = responsiveVoice.speak("What is your name");
 }, delay);
 
-var delay=3000; //1 second
+function speak(){
+  responsiveVoice.speak("Are you married");
+}
+//var delay=3000; //1 second
 
-setTimeout(function() {
-var a = responsiveVoice.speak("What is your name");
-}, delay);
-var delay=7000; //1 second
+//setTimeout(function() {
+//var a = responsiveVoice.speak("What is your name");
+//}, delay);
+//var delay=7000; //1 second
 
-setTimeout(function() {
-var a = responsiveVoice.speak("Hello World");
-}, delay);
-var delay=10000; //1 second
+//setTimeout(function() {
+//var a = responsiveVoice.speak("Hello World");
+//}, delay);
+//var delay=10000; //1 second
 
-setTimeout(function() {
-var a = responsiveVoice.speak("Hello World");
-}, delay);
+//setTimeout(function() {
+//var a = responsiveVoice.speak("Hello World");
+//}, delay);
 
-    function Once(){
-//    alert("help");
-    }
-    window.onload=Once;
+
     </script>
-  <script>
-  $(document).ready(function() {
-    $('#btnSun').click(function() {
-      $.fn.myFunction();
-    });
-    $.fn.myFunction = function() {
-      responsiveVoice.speak("What is your name");
-    }
-  });
-  </script>
+
 
     </head>
   <body>
@@ -60,7 +51,9 @@ var a = responsiveVoice.speak("Hello World");
     var commands = {
          'My name is *val': function(val) { var first = val;
        var setFirst = document.getElementById('firstName');
-       setFirst.textContent = first;}
+       setFirst.textContent = first;
+       speak();
+     }
     };
     // Use addCommands API to add commands to annyang
     annyang.addCommands(commands);
