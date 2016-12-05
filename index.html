@@ -65,32 +65,28 @@ margin-right:10px;
 
 <script>
 
-function myFunction()
-{
+//function myFunction()
+//{
 //x=document.getElementsByClassName("Name");  // Find the elements
   //  for(var i = 0; i < x.length; i++){
     //x[i].innerText="Hello JavaScript!";    // Change the content
   //  }
 
-}
-myFunction();
+//}
+//myFunction();
      // check if speech recognition is supported
     if (annyang) {
     // Define your commands
     var commands = {
-        // 'My name is *val': function(val) { var first = val;
-      // var setFirst = document.getElementById('firstName');
-      // setFirst.textContent = first;
-         'Enter *val1': function(val1) { var second = val1;
-     var nameTest = document.getElementsByClassName('Name');
-     for(var i =0); i< nameTest.length; i++);
-     nameTest[i].innerText= second;
+      'My name is *val': function(val) { var first = val;
+      var setFirst = document.getElementById('firstName');
+      setFirst.textContent = first;
+
 
 
 
        speak();
      }
-   }
     };
     // Use addCommands API to add commands to annyang
     annyang.addCommands(commands);
