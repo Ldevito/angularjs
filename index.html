@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <script src='responsivevoice.js'></script>
+<script src='will.js'></script>
   <html lang = "en">
   <head>
     <meta charset="UTF-8">
@@ -41,20 +42,38 @@ div{
   font-weight: bold;
 
 }
+p{
+text-align:justify;
+text-indent:30px;
+margin-left: 10px;
+margin-right:10px;
+
+
+}
 </style>
 
     </head>
   <body>
 <div>Last Will and Testament</div>
 <div>of</div>
-<div id="firstName">      first name</div>
-    <!--<input id="btnSun"  type='button' value='🔊 Play' />-->
+<div> <span id="firstName" class="Name">  name</span></div>
+<p> I, <span id="firstName" class="Name"> name</span>, residing in Oceanside, County of Nassau and State of New York, being of sound and disposing mind and memory, do hereby make, publish, and declare this to be my Last Will and Testament, revoking any and all prior Wills and Codicils made by me.</p>
 
   </body>
 <!--Include annyang from a CDN service or from your own server. -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/1.4.0/annyang.min.js"></script>
 
 <script>
+
+function myFunction()
+{
+//x=document.getElementsByClassName("Name");  // Find the elements
+  //  for(var i = 0; i < x.length; i++){
+    //x[i].innerText="Hello JavaScript!";    // Change the content
+  //  }
+
+}
+myFunction();
      // check if speech recognition is supported
     if (annyang) {
     // Define your commands
@@ -62,6 +81,13 @@ div{
          'My name is *val': function(val) { var first = val;
        var setFirst = document.getElementById('firstName');
        setFirst.textContent = first;
+         'Enter *val1': function(val1) { var second = val1;
+     var nameTest = document.getElementsByClassName('Name');
+     for(var i =0); i< nameTest.length; i++);
+     nameTest[i].innerText= second;
+
+
+
        speak();
      }
     };
