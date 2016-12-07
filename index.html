@@ -57,7 +57,7 @@ margin-right:10px;
 <div>Last Will and Testament</div>
 <div>of</div>
 <div> <span class="Name">  name</span></div>
-<p> I, <span class="Name"> name</span>, residing in Oceanside, County of Nassau and State of New York, being of sound and disposing mind and memory, do hereby make, publish, and declare this to be my Last Will and Testament, revoking any and all prior Wills and Codicils made by me.</p>
+<p> I, <span class="Name"> name</span>, residing in <span class="cityName">  name</span>, County of Nassau and State of New York, being of sound and disposing mind and memory, do hereby make, publish, and declare this to be my Last Will and Testament, revoking any and all prior Wills and Codicils made by me.</p>
 <div>ARTICLE ONE</div>
 <p>
 I give and bequeath all tangible personal property owned by me at the time of my death, including, but not limited to furniture, furnishings, rugs, pictures, books, silver, linen, china, glassware, objects of art, wearing apparel, jewelry, boats and automobiles, together with all policies of insurance relating thereto to my children who survive me, to be divided among them in as nearly equal shares as they may agree upon or, if they are unable to reach such an agreement, as my Executrix shall determine, provided that any of such property that my Executrix may deem unsuitable for distribution shall be sold or otherwise disposed of and the proceeds thereof shall be added to my residuary estate.
@@ -170,7 +170,7 @@ ________________________________
 <br>
 <div>ATTESTATION CLAUSE</div>
 <p>
-WE, the undersigned, do hereby certify that on February ___, 2015,<span class = "Name"> name </span>, the Testator above named, did, in the presence of the undersigned, and of each of us, subscribe, publish and declare the foregoing instrument to be his Last Will and Testament and then and there requested each of us to sign our names thereto as witnesses to the execution thereof, which we hereby do in the presence of the said Testator and of each other on February ___, 2015, at Oceanside, New York.
+WE, the undersigned, do hereby certify that on February ___, 2015, <span class = "Name"> name </span>, the Testator above named, did, in the presence of the undersigned, and of each of us, subscribe, publish and declare the foregoing instrument to be his Last Will and Testament and then and there requested each of us to sign our names thereto as witnesses to the execution thereof, which we hereby do in the presence of the said Testator and of each other on February ___, 2015, at Oceanside, New York.
 
 </p>
 <br>
@@ -242,6 +242,11 @@ Notary Public
 <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/1.4.0/annyang.min.js"></script>
 
 <script>
+function resides(){
+  setTimeout(function() {
+    var a = responsiveVoice.speak("What city does client live in");
+  }, delay);
+}
 
 function myFunction(){
 x=document.getElementsByClassName("Name");  // Find the elements
@@ -259,14 +264,21 @@ myFunction();
     //  setFirst.textContent = first;
     //  speak();
 //},
-    'My name is *val': function(val) {
+    'My clients name is *val': function(val) {
     var Second = val;
     setTest = document.getElementsByClassName("Name");
     for(var i = 0; i < x.length; i++){
     setTest[i].innerText = Second;
+    resides();
 }
+},
+'Client lives in *val': function(val) {
+var cityName = val;
+setTest = document.getElementsByClassName("cityName");
+for(var i = 0; i < x.length; i++){
+setTest[i].innerText = cityName;
 }
-
+},
     };
     // Use addCommands API to add commands to annyang
     annyang.addCommands(commands);
