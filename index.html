@@ -65,22 +65,20 @@ margin-right:10px;
 
 <script>
 
-function myFunction(){
-x=document.getElementsByClassName("Name");  // Find the elements
+function myFunction(test, test1){
+x=document.getElementsByClassName(test);  // Find the elements
 for(var i = 0; i < x.length; i++){
-x[i].innerText="Name";    // Change the content
+x[i].innerText=test1;    // Change the content
 }
 }
-myFunction();
+myFunction(Name, Louis);
      // check if speech recognition is supported
     if (annyang) {
     // Define your commands
     var commands = {
       'My name is *val': function(val) { var first = val;
       var setFirst = document.getElementById('firstName');
-
       setFirst.textContent = first;
-
       speak();
 },
     'Test *val': function(val) {
