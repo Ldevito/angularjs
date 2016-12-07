@@ -81,14 +81,14 @@ margin-right:10px;
       'My name is *val': function(val) { var first = val;
       var setFirst = document.getElementById('firstName');
       setFirst.textContent = first;
-
+      speak();
+},
     'Enter *val': function(val) { var Second = val;
     var setTest = document.getElementsByClassName('Name');
     setTest[i].innerText = Second;
 
+}
 
-       speak();
-     }
     };
     // Use addCommands API to add commands to annyang
     annyang.addCommands(commands);
