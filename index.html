@@ -9,7 +9,7 @@
     var delay=1000; //700 = 1 second
 
 setTimeout(function() {
-  var a = responsiveVoice.speak("What is your name");
+  var a = responsiveVoice.speak("What is your client's name");
 }, delay);
 
 function speak(){
@@ -264,7 +264,7 @@ myFunction();
     //  setFirst.textContent = first;
     //  speak();
 //},
-    'My clients name is *val': function(val) {
+    'Clients name is *val': function(val) {
     var Second = val;
     setTest = document.getElementsByClassName("Name");
     for(var i = 0; i < x.length; i++){
@@ -278,7 +278,7 @@ setTest = document.getElementsByClassName("cityName");
 for(var i = 0; i < x.length; i++){
 setTest[i].innerText = cityName;
 }
-},
+}
     };
     // Use addCommands API to add commands to annyang
     annyang.addCommands(commands);
