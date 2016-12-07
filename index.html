@@ -80,16 +80,17 @@ margin-right:10px;
     var commands = {
       'My name is *val': function(val) { var first = val;
       var setFirst = document.getElementById('firstName');
-      for(var i = 0; i < x.length; i++){
+
       setFirst.textContent = first;
-    }
+
       speak();
 },
     'Enter *val': function(val) {
     var Second = val;
     var setTest = document.getElementsByClassName('Name');
+    for(var i = 0; i < x.length; i++){
     setTest[i].innerText = Second;
-
+}
 }
 
     };
