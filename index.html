@@ -242,9 +242,15 @@ Notary Public
 <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/1.4.0/annyang.min.js"></script>
 
 <script>
-function resides(){
+function cityName(){
   setTimeout(function() {
     var a = responsiveVoice.speak("What city does client live in");
+  }, delay);
+}
+
+function countyName(){
+  setTimeout(function(){
+    var a = responsiveVoice.speak("What county does client live in")
   }, delay);
 }
 
@@ -270,13 +276,21 @@ myFunction();
     for(var i = 0; i < x.length; i++){
     setTest[i].innerText = Second;
     }
-    resides();
+    cityName();
 },
-'Client lives in *val': function(val) {
-var cityName = val;
-setTest = document.getElementsByClassName("cityName");
-for(var i = 0; i < x.length; i++){
-setTest[i].innerText = cityName;
+    'Clients city is *val': function(val) {
+     var cityName = val;
+     setTest = document.getElementsByClassName("cityName");
+     for(var i = 0; i < x.length; i++){
+     setTest[i].innerText = cityName;
+   }
+   countyName();
+},
+    'Clients county is *val': function(val) {
+     var countyName = val;
+     setTest = document.getElementsByClassName("countyName");
+     for(var i = 0; i < x.length; i++){
+     setTest[i].innerText = countyName;
 }
 }
     };
