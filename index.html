@@ -57,7 +57,7 @@ margin-right:10px;
 <div>Last Will and Testament</div>
 <div>of</div>
 <div> <span class="Name">  name</span></div>
-<p> I, <span class="Name"> name</span>, residing in <span class="cityName">  name</span>, County of Nassau and State of New York, being of sound and disposing mind and memory, do hereby make, publish, and declare this to be my Last Will and Testament, revoking any and all prior Wills and Codicils made by me.</p>
+<p> I, <span class="Name"> name</span>, residing in <span class="cityName">  name</span>, County of <span class="countyName">  Name</span> and State of New York, being of sound and disposing mind and memory, do hereby make, publish, and declare this to be my Last Will and Testament, revoking any and all prior Wills and Codicils made by me.</p>
 <div>ARTICLE ONE</div>
 <p>
 I give and bequeath all tangible personal property owned by me at the time of my death, including, but not limited to furniture, furnishings, rugs, pictures, books, silver, linen, china, glassware, objects of art, wearing apparel, jewelry, boats and automobiles, together with all policies of insurance relating thereto to my children who survive me, to be divided among them in as nearly equal shares as they may agree upon or, if they are unable to reach such an agreement, as my Executrix shall determine, provided that any of such property that my Executrix may deem unsuitable for distribution shall be sold or otherwise disposed of and the proceeds thereof shall be added to my residuary estate.
@@ -270,7 +270,7 @@ myFunction();
     //  setFirst.textContent = first;
     //  speak();
 //},
-    'Clients name is *val': function(val) {
+    'Client name is *val': function(val) {
     var Second = val;
     setTest = document.getElementsByClassName("Name");
     for(var i = 0; i < x.length; i++){
@@ -278,7 +278,7 @@ myFunction();
     }
     cityName();
 },
-    'Clients city is *val': function(val) {
+    'Client city is *val': function(val) {
      var cityName = val;
      setTest = document.getElementsByClassName("cityName");
      for(var i = 0; i < x.length; i++){
