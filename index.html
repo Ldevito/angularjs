@@ -12,11 +12,7 @@ setTimeout(function() {
   var a = responsiveVoice.speak("What is your client's name");
 }, delay);
 
-function speak(){
-  setTimeout(function() {
-    var a = responsiveVoice.speak("Are you married");
-  }, delay);
-}
+
 //var delay=3000; //1 second
 
 //setTimeout(function() {
@@ -242,6 +238,11 @@ Notary Public
 <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/1.4.0/annyang.min.js"></script>
 
 <script>
+var delay=1000; //700 = 1 second
+
+setTimeout(function() {
+var a = responsiveVoice.speak("What is your client's name");
+}, delay);
 function cityName(){
     var a = responsiveVoice.speak("What city does client live in");
 }
