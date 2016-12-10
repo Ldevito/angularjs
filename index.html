@@ -270,7 +270,7 @@ myFunction();
     //  setFirst.textContent = first;
     //  speak();
 //},
-    'Client name is *val': function(val) {
+    'Clients name is *val': function(val) {
     var Second = val;
     setTest = document.getElementsByClassName("Name");
     for(var i = 0; i < x.length; i++){
@@ -278,15 +278,15 @@ myFunction();
     }
     cityName();
 },
-    'Client city is *val': function(val) {
+    'Client lives in *val': function(val) {
      var cityName = val;
      setTest = document.getElementsByClassName("cityName");
      for(var i = 0; i < x.length; i++){
      setTest[i].innerText = cityName;
    }
-   countyName();
+   cityName();
 },
-    'Client county is *val': function(val) {
+    'Clients county is *val': function(val) {
      var countyName = val;
      setTest = document.getElementsByClassName("countyName");
      for(var i = 0; i < x.length; i++){
