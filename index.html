@@ -244,10 +244,12 @@ function cityName(){
     var a = responsiveVoice.speak("What city does client live in");
 }
 function countyName(){
-    window.alert("This Sucks");
     var a = responsiveVoice.speak("What county does client live in");
 }
-
+function child1Name()
+{
+    var a = responsiveVoice.speak("What is you childs name");
+}
 function myFunction(){
 x=document.getElementsByClassName("Name");  // Find the elements
 for(var i = 0; i < x.length; i++){
@@ -279,11 +281,12 @@ myFunction();
      for(var i = 0; i < x.length; i++){
      setTest[i].innerText = cityName;
    }
-   countyName();
+     countyName();
 },
     'Clients county is *val': function(val) {
      var countyName = val;
      setTest = document.getElementsByClassName("countyName");
+     child1Name();
      for(var i = 0; i < x.length; i++){
      setTest[i].innerText = countyName;
 }
