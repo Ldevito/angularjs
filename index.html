@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <script src='responsivevoice.js'></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/1.4.0/annyang.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/speechkitt.min.js"></script>
+<script src="will.js"></script>
+
   <html lang = "en">
   <head>
     <meta charset="UTF-8">
@@ -233,7 +234,7 @@ Notary Public
   </body>
 <!--Include annyang from a CDN service or from your own server. -->
 
-
+<!--
 <script>
 var delay=2000; //700 = 1 second
 
@@ -294,18 +295,11 @@ myFunction();
 }
     };
 
-    // Tell KITT to use annyang
- SpeechKITT.annyang();
-
- // Define a stylesheet for KITT to use
- SpeechKITT.setStylesheet('//cdnjs.cloudflare.com/ajax/libs/SpeechKITT/0.3.0/themes/flat.css');
-
- // Render KITT's interface
- SpeechKITT.vroom();
     // Use addCommands API to add commands to annyang
     annyang.addCommands(commands);
     // Start listening. You call this right here or do it later on some event like button click
-    //annyang.start();
+    annyang.start();
     }
 </script>
+-->
 </html>
