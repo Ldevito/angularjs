@@ -36,7 +36,8 @@ myFunction();
     //  setFirst.textContent = first;
     //  speak();
 //},
-    'Clients name is *val': function(val) {
+    var clientName = "Clients name is";
+    'clientName *val': function(val) {
     var Second = val;
     setTest = document.getElementsByClassName("Name");
     for(var i = 0; i < x.length; i++){
