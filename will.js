@@ -1,4 +1,4 @@
-<script>
+
 var delay=2000; //700 = 1 second
 
 setTimeout(function() {
@@ -63,4 +63,3 @@ myFunction();
     // Start listening. You call this right here or do it later on some event like button click
     annyang.start();
     }
-</script>
