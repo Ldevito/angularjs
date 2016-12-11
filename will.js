@@ -27,6 +27,7 @@ x[i].innerText="Name";    // Change the content
 }
 }
 myFunction();
+var clientName = "Clients name is";
      // check if speech recognition is supported
     if (annyang) {
     // Define your commands
@@ -36,7 +37,7 @@ myFunction();
     //  setFirst.textContent = first;
     //  speak();
 //},
-    var clientName = "Clients name is";
+
     'clientName *val': function(val) {
     var Second = val;
     setTest = document.getElementsByClassName("Name");
