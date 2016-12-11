@@ -2,7 +2,7 @@
 var delay=2000; //700 = 1 second
 
 setTimeout(function() {
-var a = responsiveVoice.speak(What is you Clients Name);
+var a = responsiveVoice.speak("What is you Clients Name");
 var sayName = document.getElementById('prompt');
 sayName.textContent = "Say Clients Name is";
 }, delay);
