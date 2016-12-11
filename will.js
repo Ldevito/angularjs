@@ -1,10 +1,17 @@
+var msg = "I am the best";
+function updateMessage(){
+  var sayName = document.getElementById('prompt');
+  sayName.textContent = 'msg';
+}
+updateMessage();
+
+
 
 var delay=2000; //700 = 1 second
 
 setTimeout(function() {
 var a = responsiveVoice.speak("What is you Clients Name");
-var sayName = document.getElementById('prompt');
-sayName.textContent = 'Say Clients Name is';
+
 }, delay);
 
 function cityName(){
