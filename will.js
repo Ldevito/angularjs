@@ -70,7 +70,7 @@ myFunction();
       var cityName = val;
       setTest = document.getElementsByClassName("cityName");
       for(var i = 0; i < x.length; i++){
-        setTest[i].innerText = Second;
+        setTest[i].innerText = cityName;
      }
      fcountyName();
 },
