@@ -57,7 +57,7 @@ myFunction();
      var Second = val;
      fclientName();
 },
-    'Client Name is *val': function(val) {
+    "Client's Name is *val": function(val) {
     var Second = val;
     setTest = document.getElementsByClassName("Name");
     for(var i = 0; i < x.length; i++){
@@ -66,7 +66,7 @@ myFunction();
     fcityName();
 },
 
-    'Client City is *val': function(val) {
+    "Client's City is *val": function(val) {
       var vcityName = val;
       setTest = document.getElementsByClassName("cityName");
       for(var i = 0; i < x.length; i++){
@@ -75,7 +75,7 @@ myFunction();
      fcountyName();
 },
 
-    'Client County is *val': function(val) {
+    "Client's County is *val": function(val) {
      var countyName = val;
      setTest = document.getElementsByClassName("countyName");
      for(var i = 0; i < x.length; i++){
