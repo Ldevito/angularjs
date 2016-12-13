@@ -63,7 +63,7 @@ myFunction();
     }
     cityName();
 },
-    'Client lives in *val': function(val) {
+    'Clients city is *val': function(val) {
      var cityName = val;
      countyName();
      setTest = document.getElementsByClassName("cityName");
