@@ -17,7 +17,7 @@ function clientName(){
     sayName.textContent = 'Say "Client name is"';
 }
 
-function cityName(){
+function cName(){
     var a = responsiveVoice.speak("What city does client live in");
     var sayName = document.getElementById('prompt');
     sayName.textContent = 'Say "Client city is"';
@@ -63,7 +63,7 @@ myFunction();
     for(var i = 0; i < x.length; i++){
     setTest[i].innerText = Second;
     }
-    cityName();
+    cName();
 },
     'Client City is *val': function(val) {
      var cityName = val;
