@@ -68,6 +68,7 @@ myFunction();
 },
 
     'City is *val': function(val) {
+      var a = responsiveVoice.speak("What county does client live in");
       var vcityName = val;
       setCityName = document.getElementsByClassName("cityName");
       for(var i = 0; i < x.length; i++){
