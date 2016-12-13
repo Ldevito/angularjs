@@ -26,7 +26,7 @@ function fcityName(){
 function fcountyName(){
     var a = responsiveVoice.speak("What county does client live in");
     var sayName = document.getElementById('prompt');
-    sayName.textContent = 'Say "Clients county is"';
+    sayName.textContent = 'Say "County is"';
 }
 
 function fclientMarried()
@@ -75,7 +75,7 @@ myFunction();
      fcountyName();
 },
 
-    'Clients County is *val': function(val) {
+    'County is *val': function(val) {
      var countyName = val;
      setTest = document.getElementsByClassName("countyName");
      for(var i = 0; i < x.length; i++){
