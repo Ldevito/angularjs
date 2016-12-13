@@ -11,25 +11,25 @@ sayName.textContent = 'Say "Prepare Simple Will"';
 }, delay);
 
 
-function clientName(){
+function fclientName(){
     var a = responsiveVoice.speak("What is your Clients Name");
     var sayName = document.getElementById('prompt');
     sayName.textContent = 'Say "Client name is"';
 }
 
-function cName(){
+function fcityName(){
     var a = responsiveVoice.speak("What city does client live in");
     var sayName = document.getElementById('prompt');
     sayName.textContent = 'Say "Client city is"';
 }
 
-function countyName(){
+function fcountyName(){
     var a = responsiveVoice.speak("What county does client live in");
     var sayName = document.getElementById('prompt');
     sayName.textContent = 'Say "Client county is"';
 }
 
-function clientMarried()
+function fclientMarried()
 {
     var a = responsiveVoice.speak("Is your client married");
     var sayName = document.getElementById('prompt');
@@ -55,7 +55,7 @@ myFunction();
 
     'Prepare *val': function(val) {
      var Second = val;
-     clientName();
+     fclientName();
 },
     'Client Name is *val': function(val) {
     var Second = val;
@@ -63,13 +63,23 @@ myFunction();
     for(var i = 0; i < x.length; i++){
     setTest[i].innerText = Second;
     }
-    cName();
+    fcityName();
 },
+
     'Client City is *val': function(val) {
-     var cityName = val;
-     setTest = document.getElementsByClassName("cityName");
+      var cityName = val;
+      setTest = document.getElementsByClassName("cityName");
+      for(var i = 0; i < x.length; i++){
+        setTest[i].innerText = Second;
+     }
+     fcountyName();
+},
+
+    'Client County is *val': function(val) {
+     var countyName = val;
+     setTest = document.getElementsByClassName("countyName");
      for(var i = 0; i < x.length; i++){
-     setTest[i].innerText = cityName;
+     setTest[i].innerText = countyName;
      clientMarried();
 }
 
