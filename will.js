@@ -51,7 +51,7 @@ myFunction();
     //  speak();
 //},
 
-    'You can help me prepare a Will *val': function(val) {
+    'Prepare Will *val': function(val) {
      var Second = val;
      clientName();
 },
