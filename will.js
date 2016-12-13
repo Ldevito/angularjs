@@ -68,9 +68,9 @@ myFunction();
 
     'Client lives in *val': function(val) {
       var vcityName = val;
-      setTest = document.getElementsByClassName("cityName");
+      setCityName = document.getElementsByClassName("cityName");
       for(var i = 0; i < x.length; i++){
-        setTest[i].innerText = vcityName;
+        setCityName[i].innerText = vcityName;
      }
      fcountyName();
 },
