@@ -65,12 +65,11 @@ myFunction();
 },
     'Clients city is *val': function(val) {
      var cityName = val;
-     countyName();
      setTest = document.getElementsByClassName("cityName");
      for(var i = 0; i < x.length; i++){
      setTest[i].innerText = cityName;
    }
-
+    countyName();
 },
     'Clients county is *val': function(val) {
      var countyName = val;
