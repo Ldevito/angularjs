@@ -53,8 +53,7 @@ myFunction();
 
     'You can help me prepare a Will *val': function(val) {
      var Second = val;
-    }
-    clientName();
+     clientName();
 },
     'Clients Name is *val': function(val) {
     var Second = val;
