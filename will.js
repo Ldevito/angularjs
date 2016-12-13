@@ -68,9 +68,9 @@ myFunction();
     'Client City is *val': function(val) {
      var countyName = val;
      setTest = document.getElementsByClassName("cityName");
-     clientMarried();
      for(var i = 0; i < x.length; i++){
      setTest[i].innerText = cityName;
+     clientMarried();
 }
 
 }
