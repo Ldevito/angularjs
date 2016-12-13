@@ -20,7 +20,7 @@ function fclientName(){
 function fcityName(){
     var a = responsiveVoice.speak("What city does client live in");
     var sayName = document.getElementById('prompt');
-    sayName.textContent = 'Say "Client lives in"';
+    sayName.textContent = 'Say "City is"';
 }
 
 function fcountyName(){
@@ -67,7 +67,7 @@ myFunction();
     fcityName();
 },
 
-    'Client lives in *val': function(val) {
+    'City is *val': function(val) {
       var vcityName = val;
       setCityName = document.getElementsByClassName("cityName");
       for(var i = 0; i < x.length; i++){
