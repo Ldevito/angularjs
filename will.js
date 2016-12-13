@@ -7,7 +7,7 @@ var delay=2000; //700 = 1 second
 setTimeout(function() {
 var a = responsiveVoice.speak("Hi Louis, What can I help you prepare");
 var sayName = document.getElementById('prompt');
-sayName.textContent = 'Say "You can help me prepare a"';
+sayName.textContent = 'Say "Prepare Will"';
 }, delay);
 
 
@@ -51,7 +51,7 @@ myFunction();
     //  speak();
 //},
 
-    'Prepare Will *val': function(val) {
+    'Prepare *val': function(val) {
      var Second = val;
      clientName();
 },
