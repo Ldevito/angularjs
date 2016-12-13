@@ -67,10 +67,10 @@ myFunction();
 },
 
     'Client City is *val': function(val) {
-      var cityName = val;
+      var vcityName = val;
       setTest = document.getElementsByClassName("cityName");
       for(var i = 0; i < x.length; i++){
-        setTest[i].innerText = cityName;
+        setTest[i].innerText = vcityName;
      }
      fcountyName();
 },
