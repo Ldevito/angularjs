@@ -80,7 +80,7 @@ myFunction();
      setTest = document.getElementsByClassName("countyName");
      for(var i = 0; i < x.length; i++){
      setTest[i].innerText = countyName;
-     clientMarried();
+     fclientMarried();
 }
 
 }
