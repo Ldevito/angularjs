@@ -7,26 +7,28 @@ var delay=2000; //700 = 1 second
 setTimeout(function() {
 var a = responsiveVoice.speak("Hi Louis, What can I help you prepare");
 var sayName = document.getElementById('prompt');
-sayName.textContent = 'Say "Prepare Will"';
+sayName.textContent = 'Say "Prepare Simple Will"';
 }, delay);
 
 
 function clientName(){
     var a = responsiveVoice.speak("What is your Clients Name");
     var sayName = document.getElementById('prompt');
-    sayName.textContent = 'Say "Clients name is"';
+    sayName.textContent = 'Say "Client name is"';
 }
 
 function cityName(){
     var a = responsiveVoice.speak("What city does client live in");
     var sayName = document.getElementById('prompt');
-    sayName.textContent = 'Say "Clients city is"';
+    sayName.textContent = 'Say "Client city is"';
 }
+
 function countyName(){
     var a = responsiveVoice.speak("What county does client live in");
     var sayName = document.getElementById('prompt');
-    sayName.textContent = 'Say "Clients county is"';
+    sayName.textContent = 'Say "Client county is"';
 }
+
 function clientMarried()
 {
     var a = responsiveVoice.speak("Is your client married");
@@ -55,7 +57,7 @@ myFunction();
      var Second = val;
      clientName();
 },
-    'Clients Name is *val': function(val) {
+    'Client Name is *val': function(val) {
     var Second = val;
     setTest = document.getElementsByClassName("Name");
     for(var i = 0; i < x.length; i++){
@@ -63,7 +65,7 @@ myFunction();
     }
     cityName();
 },
-    'Clients city is *val': function(val) {
+    'Client city is *val': function(val) {
      var cityName = val;
      setTest = document.getElementsByClassName("cityName");
      for(var i = 0; i < x.length; i++){
@@ -71,7 +73,7 @@ myFunction();
    }
     countyName();
 },
-    'Clients county is *val': function(val) {
+    'Client County is *val': function(val) {
      var countyName = val;
      setTest = document.getElementsByClassName("countyName");
      clientMarried();
