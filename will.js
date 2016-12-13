@@ -68,7 +68,6 @@ myFunction();
     'Client city is *val': function(val) {
      var cityName = val;
      setTest = document.getElementsByClassName("cityName");
-     clientCounty();
      for(var i = 0; i < x.length; i++){
      setTest[i].innerText = cityName;
    }
@@ -76,7 +75,7 @@ myFunction();
      var a = responsiveVoice.speak("Hi Louis, What can I help you prepare");
      var sayName = document.getElementById('prompt');
      sayName.textContent = 'Say "Prepare Simple Will"';
-     }, delay);  
+     }, delay);
 },
     'Client County is *val': function(val) {
      var countyName = val;
