@@ -24,6 +24,7 @@ function fcityName(){
 }
 
 function fcountyName(){
+    window.alert("this sucks big time");
     var a = responsiveVoice.speak("What county does client live in");
     var sayName = document.getElementById('prompt');
     sayName.textContent = 'Say "County is"';
@@ -72,6 +73,7 @@ myFunction();
       for(var i = 0; i < x.length; i++){
         setCityName[i].innerText = vcityName;
      }
+     window.alert("this Sucks");
      fcountyName();
 },
 
