@@ -20,7 +20,7 @@ function clientName(){
 function cityName(){
     var a = responsiveVoice.speak("What city does client live in");
     var sayName = document.getElementById('prompt');
-    sayName.textContent = 'Say "Client city is"';
+    sayName.textContent = 'Say "Client county is"';
 }
 
 function countyName(){
@@ -64,18 +64,6 @@ myFunction();
     setTest[i].innerText = Second;
     }
     cityName();
-},
-    'Client city is *val': function(val) {
-     var cityName = val;
-     setTest = document.getElementsByClassName("cityName");
-     for(var i = 0; i < x.length; i++){
-     setTest[i].innerText = cityName;
-   }
-     setTimeout(function() {
-     var a = responsiveVoice.speak("Hi Louis, What can I help you prepare");
-     var sayName = document.getElementById('prompt');
-     sayName.textContent = 'Say "Prepare Simple Will"';
-     }, delay);
 },
     'Client County is *val': function(val) {
      var countyName = val;
