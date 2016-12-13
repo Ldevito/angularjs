@@ -72,7 +72,11 @@ myFunction();
      for(var i = 0; i < x.length; i++){
      setTest[i].innerText = cityName;
    }
-  
+     setTimeout(function() {
+     var a = responsiveVoice.speak("Hi Louis, What can I help you prepare");
+     var sayName = document.getElementById('prompt');
+     sayName.textContent = 'Say "Prepare Simple Will"';
+     }, delay);  
 },
     'Client County is *val': function(val) {
      var countyName = val;
@@ -81,6 +85,7 @@ myFunction();
      for(var i = 0; i < x.length; i++){
      setTest[i].innerText = countyName;
 }
+
 }
     };
 
