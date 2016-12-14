@@ -51,7 +51,7 @@ x[i].innerText="Name";    // Change the content
 }
 }
 myFunction();
-/*
+
      // check if speech recognition is supported
     if (annyang) {
     // Define your commands
@@ -107,7 +107,7 @@ myFunction();
 
 },
 
-    'Yes *val': function(val) {
+    'No *val': function(val) {
         fclientMarried();
         var countyName = val;
         setTest = document.getElementsByClassName("countyName");
