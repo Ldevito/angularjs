@@ -67,12 +67,13 @@ myFunction();
      fclientName();
 },
     'Clients Name is *val': function(val) {
-    var Second = val;
-    setTest = document.getElementsByClassName("Name");
-    for(var i = 0; i < x.length; i++){
-    setTest[i].innerText = Second;
+      fcityName();
+      var Second = val;
+      setTest = document.getElementsByClassName("Name");
+      for(var i = 0; i < x.length; i++){
+        setTest[i].innerText = Second;
     }
-    fcityName();
+
 },
 
     'City is *val': function(val) {
@@ -86,11 +87,12 @@ myFunction();
 },
 
     'County is *val': function(val) {
-     var countyName = val;
-     setTest = document.getElementsByClassName("countyName");
-     for(var i = 0; i < x.length; i++){
-     setTest[i].innerText = countyName;
-     fclientMarried();
+       fclientMarried();
+       var countyName = val;
+       setTest = document.getElementsByClassName("countyName");
+       for(var i = 0; i < x.length; i++){
+         setTest[i].innerText = countyName;
+
 }
 
 },
@@ -103,14 +105,15 @@ myFunction();
 
 }
 
-}
+},
 
     'Yes *val': function(val) {
-      var countyName = val;
-      setTest = document.getElementsByClassName("countyName");
-      for(var i = 0; i < x.length; i++){
-        setTest[i].innerText = countyName;
         fclientMarried();
+        var countyName = val;
+        setTest = document.getElementsByClassName("countyName");
+        for(var i = 0; i < x.length; i++){
+          setTest[i].innerText = countyName;
+
 }
 
 }
