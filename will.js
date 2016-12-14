@@ -12,6 +12,7 @@ sayName.textContent = 'Say "Prepare Simple Will"';
 
 
 function fclientName(){
+    var a = responsiveVoice("Great, I can help you with that");
     var a = responsiveVoice.speak("What is your Clients Name");
     var sayName = document.getElementById('prompt');
     sayName.textContent = 'Say "Clients name is"';
@@ -24,7 +25,6 @@ function fcityName(){
 }
 
 function fcountyName(){
-    window.alert("this sucks big time");
     var a = responsiveVoice.speak("What county does client live in");
     var sayName = document.getElementById('prompt');
     sayName.textContent = 'Say "County is"';
@@ -36,6 +36,15 @@ function fclientMarried()
     var sayName = document.getElementById('prompt');
     sayName.textContent = 'Say "Yes or No"';
 }
+
+function fwifeName()
+{
+    var a = responsiveVoice.speak("What is wifes name");
+    var sayName = document.getElementById('prompt');
+    sayName.textContent = 'Say "Wifes name is"';
+}
+
+
 function myFunction(){
 x=document.getElementsByClassName("Name");  // Find the elements
 for(var i = 0; i < x.length; i++){
@@ -74,7 +83,7 @@ myFunction();
       for(var i = 0; i < x.length; i++){
         setCityName[i].innerText = vcityName;
      }
-  
+
 },
 
     'County is *val': function(val) {
@@ -86,6 +95,27 @@ myFunction();
 }
 
 }
+    'Yes *val': function(val) {
+      fwifeName();
+      var countyName = val;
+      setTest = document.getElementsByClassName("countyName");
+      for(var i = 0; i < x.length; i++){
+        setTest[i].innerText = countyName;
+
+}
+
+}
+
+    'Yes *val': function(val) {
+      var countyName = val;
+      setTest = document.getElementsByClassName("countyName");
+      for(var i = 0; i < x.length; i++){
+        setTest[i].innerText = countyName;
+        fclientMarried();
+}
+
+}
+
     };
 
     // Use addCommands API to add commands to annyang
