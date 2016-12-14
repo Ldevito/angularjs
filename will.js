@@ -96,7 +96,7 @@ myFunction();
 }
 
 },
-    'Yes *val': function(val) {
+    'Yes': function(val) {
       fwifeName();
       var countyName = val;
       setTest = document.getElementsByClassName("countyName");
