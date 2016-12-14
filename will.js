@@ -108,7 +108,7 @@ myFunction();
 },
 
     'No *val': function(val) {
-        fclientMarried();
+        fwifeName();
         var countyName = val;
         setTest = document.getElementsByClassName("countyName");
         for(var i = 0; i < x.length; i++){
