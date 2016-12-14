@@ -51,7 +51,7 @@ x[i].innerText="Name";    // Change the content
 }
 }
 myFunction();
-
+/*
      // check if speech recognition is supported
     if (annyang) {
     // Define your commands
