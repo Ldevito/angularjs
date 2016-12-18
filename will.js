@@ -105,6 +105,7 @@ myFunction();
 
 },
     'Yes': function(val) {
+      window.alert("It works");
       if (response == "CM"){
       fwifeName();
     }
