@@ -1,7 +1,7 @@
 
 
-
-
+var response = "None"
+var wifeName = "Name"
 var delay=2000; //700 = 1 second
 
 setTimeout(function() {
@@ -34,6 +34,7 @@ function fclientMarried()
     var a = responsiveVoice.speak("Is your client married");
     var sayName = document.getElementById('prompt');
     sayName.textContent = 'Say "Yes or No"';
+    response = "CM";
 }
 
 function fwifeName()
@@ -43,6 +44,13 @@ function fwifeName()
     sayName.textContent = 'Say "Wifes name is"';
 }
 
+function sweetHeart()
+{
+    var a = responsiveVoice.speak("Is this a sweatheart will");
+    var sanName = document.getElementById('prompt');
+    sayName.textContent = 'Say "Yes or No"';
+    response = "SH";
+}
 
 function myFunction(){
 x=document.getElementsByClassName("Name");  // Find the elements
@@ -97,9 +105,22 @@ myFunction();
 
 },
     'Yes': function(val) {
+      if (val == "CM"){
       fwifeName();
-
+    }
+    else if (val == "SH"){
+      setTest = document.getElementsByClassName("wifeName");
+      for(var i = 0; i < x.length; i++){
+        setTest[i].innerText = wifeName;
+      }
+    }
 },
+
+    'Wifes name is *val': function(val){
+      sweetHeart();
+      wifeName = val;
+
+    }
 
     'No': function(val) {
         fwifeName();
