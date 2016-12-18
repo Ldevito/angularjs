@@ -105,10 +105,10 @@ myFunction();
 
 },
     'Yes': function(val) {
-      if (val == "CM"){
+      if (response == "CM"){
       fwifeName();
     }
-    else if (val == "SH"){
+    else if (response == "SH"){
       setTest = document.getElementsByClassName("wifeName");
       for(var i = 0; i < x.length; i++){
         setTest[i].innerText = wifeName;
