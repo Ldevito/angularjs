@@ -47,7 +47,7 @@ function fwifeName()
 function sweetHeart()
 {
     var a = responsiveVoice.speak("Is this a sweatheart will");
-    var sanName = document.getElementById('prompt');
+    var sayName = document.getElementById('prompt');
     sayName.textContent = 'Say "Yes or No"';
     response = "SH";
 }
