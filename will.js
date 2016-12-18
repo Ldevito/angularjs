@@ -120,7 +120,7 @@ myFunction();
       sweetHeart();
       wifeName = val;
 
-    }
+    },
 
     'No': function(val) {
         fwifeName();
