@@ -117,7 +117,8 @@ myFunction();
     }
 },
 
-    'Wifes name is *val': function(val){
+    'Wife name is *val': function(val){
+      window.alert("It works");
       sweetHeart();
       wifeName = val;
 
