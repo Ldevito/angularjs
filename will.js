@@ -98,23 +98,11 @@ myFunction();
 },
     'Yes': function(val) {
       fwifeName();
-      var countyName = val;
-      setTest = document.getElementsByClassName("countyName");
-      for(var i = 0; i < x.length; i++){
-        setTest[i].innerText = countyName;
-
-}
 
 },
 
-    'No *val': function(val) {
+    'No': function(val) {
         fwifeName();
-        var countyName = val;
-        setTest = document.getElementsByClassName("countyName");
-        for(var i = 0; i < x.length; i++){
-          setTest[i].innerText = countyName;
-
-}
 
 }
 

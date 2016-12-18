@@ -70,7 +70,7 @@ margin-right:10px;
     Say
   </div>
 
-<div> Test </div>
+
 <div>Last Will and Testament</div>
 <div>of</div>
 <div> <span class="Name">  name</span></div>
@@ -82,16 +82,10 @@ I direct that the expense of packing, shipping, insuring and delivering any of m
 </p>
 <div>ARTICLE TWO</div>
 <p>
-I give and devise any interest which I own at the time of my death in the house and lot located at 11 McKinley Avenue, Lynbrook, New York as follows:
-A 50% interest to my daughter DENISE D’ANTONIO, if she survives me.  If she shall not survive me to her children per stirpes;
-A 50% interest to my daughter LISA TAFURI, if she survives me.  If she shall not survive me to her children per stirpes.
-</p>
-<div>ARTICLE THREE</div>
-<p>
 All of the rest, residue and remainder of my estate, real and personal, wherever situated, including any lapsed or ineffective legacies or devises (but excluding any property over which I may have a power of appointment, it being my intention not to exercise any such power), herein sometimes referred to as my “residuary estate”, I give, devise and bequeath my residuary estate to my children per stirpes.
 </p>
 <div>
-ARTICLE FOUR
+ARTICLE THREE
 </div>
 <p>
 A.	I direct my Executrix to pay the expenses of my funeral and of the administration of my estate as soon after my death as shall be practicable, and to pay from my residuary estate, without apportionment, all estate, transfer or death taxes imposed upon my estate, with respect to property passing under this Will.  All such taxes in respect of other property shall be apportioned against, and paid by, the persons in possession thereof or benefited thereby, in the manner provided by law.
@@ -103,11 +97,11 @@ B.	I direct that all my debts be paid as soon as practicable after my death, exc
 C.	I authorize my Executrix, in her sole and absolute discretion, to use administration expenses as deductions for estate tax purposes or income tax purposes and to use date of death values or optional values for estate tax purposes, regardless of the effect thereof on any interests under this Will, and I direct that there shall be no adjustment of such interests by reason of any action taken by my Executrix pursuant hereto.
 </p>
 
-<div> ARTICLE FIVE </div>
+<div> ARTICLE FOUR </div>
 <p>
 If any beneficiary under this Will and I shall die simulta¬neously or in such circumstances as to render it difficult or impossible to determine who prede¬ceased the other, it shall conclusively be presumed for the purposes of this Will that I survived.  If any person whose life measures the duration of a trust hereunder and any remainderman of such trust shall die under such circumstances that there is reasonable doubt as to who died first, I direct that such person whose life measures the duration of such trust shall be conclusively deemed to have survived such remainderman.
 </p>
-<div>ARTICLE SIX</div>
+<div>ARTICLE FIVE</div>
 <p>
 D.	I hereby nominate, constitute and appoint my daughter, LISA TAFURI, to be the Executrix of this my Last Will and Testament.  If LISA TAFURI should fail to qualify or cease to act as Executrix, for any reason, then I appoint my daughter, DENISE D’ANTONIO, as Executrix in her place.
 </p>
@@ -143,7 +137,7 @@ Any corporate executrix serving hereunder shall receive compensation in accor¬d
 <p>
 No successor trustee shall have any responsibility for the acts or omissions of any prior trustee, and no duty to audit or investigate the accounts or administration of any such trustee, nor, unless in writing requested to do so by a person having a present or future beneficial interest under a trust, any duty to take any action to obtain redress for breach of trust.
 </p>
-<div>ARTICLE SEVEN</div>
+<div>ARTICLE SIX</div>
 <p>
 F.	Whenever “child”, “children” or “issue” appears in this Will, it shall be deemed to include only lawful natural issue and persons deriving their relationship to or through their parent or ancestor by legal adoption prior to such adopted person’s attainment of the age of sixteen (16) years.  The Testator’s now living children are DENISE D’ANTONIO, LISA TAFURI, and ROSEANN HENNESSEY, and DOMINICK ANASTASIO.
 </p>
@@ -154,7 +148,7 @@ G.	A disposition in this Will to the descendants of a person per stirpes shall b
 H.	Any reference to the “Code” shall be a reference to the Internal Revenue Code of 1986, as amended, and any Regulations promulgated from time to time thereunder, or any corresponding provisions of any successor statute thereto or Regulations thereunder.
 </p>
 
-<div>ARTICLE EIGHT</div>
+<div>ARTICLE SEVEN</div>
 <p>
 I.	All references herein to this Will shall be construed as referring to this Will and any codicil or codicils hereto that I may hereafter execute.
 </p>
@@ -216,7 +210,7 @@ STATE OF NEW YORK	)
 				)      ss.:
 </p>
 <p>
-COUNTY OF NASSAU	)
+COUNTY OF <span class = "countyName"></span>	)
 </p>
 
 <p>
@@ -257,74 +251,5 @@ Notary Public
   </body>
 <script src='will.js'></script>
 
-<!--Include annyang from a CDN service or from your own server. -->
 
-<!--
-<script>
-var delay=2000; //700 = 1 second
-
-setTimeout(function() {
-var a = responsiveVoice.speak("What is your client's name");
-}, delay);
-
-function cityName(){
-    var a = responsiveVoice.speak("What city does client live in");
-}
-function countyName(){
-    var a = responsiveVoice.speak("What county does client live in");
-}
-function child1Name()
-{
-    var a = responsiveVoice.speak("What is you childs name");
-}
-function myFunction(){
-x=document.getElementsByClassName("Name");  // Find the elements
-for(var i = 0; i < x.length; i++){
-x[i].innerText="Name";    // Change the content
-}
-}
-myFunction();
-     // check if speech recognition is supported
-    if (annyang) {
-    // Define your commands
-    var commands = {
-    //  'My name is *val': function(val) { var first = val;
-    //  var setFirst = document.getElementById('firstName');
-    //  setFirst.textContent = first;
-    //  speak();
-//},
-    'Clients name is *val': function(val) {
-    var Second = val;
-    setTest = document.getElementsByClassName("Name");
-    for(var i = 0; i < x.length; i++){
-    setTest[i].innerText = Second;
-    }
-    cityName();
-},
-    'Client lives in *val': function(val) {
-     var cityName = val;
-     countyName();
-     setTest = document.getElementsByClassName("cityName");
-     for(var i = 0; i < x.length; i++){
-     setTest[i].innerText = cityName;
-   }
-
-},
-    'Clients county is *val': function(val) {
-     var countyName = val;
-     setTest = document.getElementsByClassName("countyName");
-     child1Name();
-     for(var i = 0; i < x.length; i++){
-     setTest[i].innerText = countyName;
-}
-}
-    };
-
-    // Use addCommands API to add commands to annyang
-    annyang.addCommands(commands);
-    // Start listening. You call this right here or do it later on some event like button click
-    annyang.start();
-    }
-</script>
--->
 </html>
