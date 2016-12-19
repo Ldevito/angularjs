@@ -5,6 +5,7 @@ var wifeName = "Name"
 var delay=2000; //700 = 1 second
 var rand = Math.floor(Math.random() * 4);
 setTimeout(function() {
+  window.alert(rand);
   switch(rand){
   case 1:
   var a = responsiveVoice.speak("Hi Louis, What can I help you prepare");
@@ -13,7 +14,7 @@ setTimeout(function() {
   var a = responsiveVoice.speak("Hello Louis, What can I help you with today");
   break;
   case 3:
-  var a = responsiveVoice.speak("Good Afternoon, how can I assist you");
+  var a = responsiveVoice.speak("Good Afternoon Louis, how can I assist you");
   break;
   default:
   var a = responsiveVoice.speak("Greetings Louis, how can I be of service");
