@@ -41,7 +41,7 @@ function fwifeName()
 {
     var a = responsiveVoice.speak("What is wifes name");
     var sayName = document.getElementById('prompt');
-    sayName.textContent = 'Say "Wifes name is"';
+    sayName.textContent = 'Say "Wife name is"';
 }
 
 function sweetHeart()
