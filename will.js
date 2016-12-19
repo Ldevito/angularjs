@@ -1,40 +1,31 @@
-var previous = 0;
+
 var gender = "None";
 var response = "None";
 var wifeName = "Name";
 var delay=2000; //700 = 1 second
-var rand = 0;
-function calcRand(){
- return rand = Math.floor(Math.random() * 4);
- }
- calcRand();
+
+
+rand = Math.floor(Math.random() * 4);
+
+
 setTimeout(function() {
   switch(rand){
   case 1:
-  if (rand == previous){
-    calcRand();
-  }
-  else
+
   var a = responsiveVoice.speak("Hi Louis, What can I help you prepare");
-  previous = 1;
+
   break;
 
   case 2:
-  if (rand == previous){
-    calcRand();
-  }
-  else
+
   var a = responsiveVoice.speak("Hello Louis, What can I help you with today");
-  previous = 2;
+
   break;
 
   case 3:
-  if (rand == previous){
-    calcRand();
-  }
-  else
+
   var a = responsiveVoice.speak("Good Afternoon Louis, how can I assist you");
-  previous = 3;
+
   break;
 
   default:
