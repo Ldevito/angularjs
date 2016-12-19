@@ -25,7 +25,8 @@ sayName.textContent = 'Say "Prepare Simple Will"';
 
 
 function fclientName(){
-
+    var a = responsiveVoice.speak("I can help you with that");
+    var a = responsiveVoice.speak("What is your clients name");
     var sayName = document.getElementById('prompt');
     sayName.textContent = 'Say "Clients name is"';
 }
