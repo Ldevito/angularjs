@@ -69,7 +69,8 @@ function endPrep()
 {
   var a = responsiveVoice.speak("Louis, this completes the Will preparation");
   var a = responsiveVoice.speak("I am glad to have been of service");
-
+  var ele = document. getElementById('prompt');
+  ele.style.display = "none";
 }
 
 function myFunction(){
