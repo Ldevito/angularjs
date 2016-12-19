@@ -22,7 +22,7 @@ var sayName = document.getElementById('prompt');
 sayName.textContent = 'Say "Prepare Simple Will"';
 }, delay);
 
-function gender(){
+function fgender(){
 var a = responsiveVoice.speak("I can help you with that");
 var a = responsiveVoice.speak("Is client a male or female");
 var sayName = document.getElementById('prompt');
@@ -107,7 +107,7 @@ myFunction();
 
     'Prepare Simple Will': function(val) {
      var Second = val;
-     gender();
+     fgender();
 },
     'Client is a *val': function(val) {
      var Second = val;
@@ -159,6 +159,12 @@ myFunction();
 },
 
     'Wife name is *val': function(val){
+      sweetHeart();
+      wifeName = val;
+
+    },
+
+    'Husband name is *val': function(val){
       sweetHeart();
       wifeName = val;
 
