@@ -46,10 +46,17 @@ function fwifeName()
 
 function sweetHeart()
 {
-    var a = responsiveVoice.speak("Is this a sweatheart will");
+    var a = responsiveVoice.speak("Is this a sweetheart will");
     var sayName = document.getElementById('prompt');
     sayName.textContent = 'Say "Yes or No"';
     response = "SH";
+}
+
+function endPrep()
+{
+  var a = responsiveVoice.speak("Louis, this completes the Will preparation");
+  var a = responsiveVoice.speak("I am glad to have been of service");
+
 }
 
 function myFunction(){
@@ -110,6 +117,7 @@ myFunction();
       fwifeName();
     }
     else if (response == "SH"){
+      endPrep();
       setTest = document.getElementsByClassName("wifeName");
       for(var i = 0; i < x.length; i++){
         setTest[i].innerText = wifeName;
