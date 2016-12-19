@@ -1,7 +1,7 @@
 
-
-var response = "None"
-var wifeName = "Name"
+var gender = "None";
+var response = "None";
+var wifeName = "Name";
 var delay=2000; //700 = 1 second
 var rand = Math.floor(Math.random() * 4);
 setTimeout(function() {
@@ -22,9 +22,15 @@ var sayName = document.getElementById('prompt');
 sayName.textContent = 'Say "Prepare Simple Will"';
 }, delay);
 
+function gender(){
+var a = responsiveVoice.speak("I can help you with that");
+var a = responsiveVoice.speak("Is client a male or female");
+var sayName = document.getElementById('prompt');
+sayName.textContent = 'Say "Client is a"';
+}
 
 function fclientName(){
-    var a = responsiveVoice.speak("I can help you with that");
+
     var a = responsiveVoice.speak("What is your clients name");
     var sayName = document.getElementById('prompt');
     sayName.textContent = 'Say "Clients name is"';
@@ -52,9 +58,17 @@ function fclientMarried()
 
 function fwifeName()
 {
+    if (gender == "male"){
     var a = responsiveVoice.speak("What is wifes name");
     var sayName = document.getElementById('prompt');
     sayName.textContent = 'Say "Wife name is"';
+  }
+  else {
+    var a = responsiveVoice.speak("What is husbands name");
+    var sayName = document.getElementById('prompt');
+    sayName.textContent = 'Say "Husband name is"';
+  }
+
 }
 
 function sweetHeart()
@@ -93,8 +107,14 @@ myFunction();
 
     'Prepare *val': function(val) {
      var Second = val;
+     gender();
+},
+    'Client is a *val': function(val) {
+     var Second = val;
+     gender = val;
      fclientName();
 },
+
     'Clients Name is *val': function(val) {
       fcityName();
       var Second = val;
