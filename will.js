@@ -105,7 +105,7 @@ myFunction();
     //  speak();
 //},
 
-    'Prepare *val': function(val) {
+    'Prepare Simple Will': function(val) {
      var Second = val;
      gender();
 },
