@@ -5,7 +5,7 @@ var wifeName = "Name";
 var delay=2000; //700 = 1 second
 var rand = 0;
 function calcRand(){
- rand = Math.floor(Math.random() * 4);
+ return rand = Math.floor(Math.random() * 4);
  }
  calcRand();
 setTimeout(function() {
