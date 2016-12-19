@@ -61,12 +61,12 @@ function fwifeName()
     if (gender == "male"){
     var a = responsiveVoice.speak("What is wifes name");
     var sayName = document.getElementById('prompt');
-    sayName.textContent = 'Say "Wife name is"';
+    sayName.textContent = 'Say "Wifes name is"';
   }
   else {
     var a = responsiveVoice.speak("What is husbands name");
     var sayName = document.getElementById('prompt');
-    sayName.textContent = 'Say "Husband name is"';
+    sayName.textContent = 'Say "Husbands name is"';
   }
 
 }
@@ -158,13 +158,13 @@ myFunction();
     }
 },
 
-    'Wife name is *val': function(val){
+    'Wifes name is *val': function(val){
       sweetHeart();
       wifeName = val;
 
     },
 
-    'Husband name is *val': function(val){
+    'Husbands name is *val': function(val){
       sweetHeart();
       wifeName = val;
 
