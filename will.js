@@ -3,16 +3,28 @@
 var response = "None"
 var wifeName = "Name"
 var delay=2000; //700 = 1 second
-
+var rand = Math.floor(Math.random() * 4);
 setTimeout(function() {
-var a = responsiveVoice.speak("Hi Louis, What can I help you prepare");
+  switch(rand){
+  case 1:
+  var a = responsiveVoice.speak("Hi Louis, What can I help you prepare");
+  break;
+  case 2:
+  var a = responsiveVoice.speak("Hello Louis, What can I help you with today");
+  break;
+  case 3:
+  var a = responsiveVoice.speak("Good Afternoon, how can I assist you");
+  break;
+  default:
+  var a = responsiveVoice.speak("Greetings Louis, how can I be of service");
+  }
 var sayName = document.getElementById('prompt');
 sayName.textContent = 'Say "Prepare Simple Will"';
 }, delay);
 
 
 function fclientName(){
-    var a = responsiveVoice.speak("What is your Clients Name");
+
     var sayName = document.getElementById('prompt');
     sayName.textContent = 'Say "Clients name is"';
 }
@@ -112,7 +124,6 @@ myFunction();
 
 },
     'Yes': function(val) {
-      window.alert("It works");
       if (response == "CM"){
       fwifeName();
     }
@@ -126,7 +137,6 @@ myFunction();
 },
 
     'Wife name is *val': function(val){
-      window.alert("It works");
       sweetHeart();
       wifeName = val;
 
